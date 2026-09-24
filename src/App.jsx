@@ -3,7 +3,10 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  //State for modal toggle. If true, modal is visible, if false, modal is invisible.
   const [isVisisble, setIsVisible] = useState(true);
+
+  //The handler function for initial state. Will be toggled with a click of a button.
   const handleVisible = function () {
     setIsVisible(!isVisisble);
   };
